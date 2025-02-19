@@ -1,0 +1,130 @@
+/* Genel Ayarlar */
+body {
+  font-family: 'Courier New', monospace;
+  background: black;
+  color: #00ff00;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ana Uygulama */
+.app-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff00;
+  border: 1px solid #00ff00;
+}
+
+/* Başlık */
+h1 {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+/* Form Alanı */
+.todo-form {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 8px;
+  background: black;
+  border: 1px solid #00ff00;
+  color: #00ff00;
+  font-size: 16px;
+}
+
+.todo-form button {
+  padding: 8px 12px;
+  background: #00ff00;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.todo-form button:hover {
+  background: black;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+}
+
+/* To-Do Listesi */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Tek Bir To-Do Öğesi */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(0, 255, 0, 0.2);
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #00ff00;
+  box-shadow: 0 0 5px #00ff00;
+  transition: 0.3s;
+}
+
+.todo-item:hover {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #007700;
+}
+
+/* Sil Butonu */
+.todo-item button {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.todo-item button:hover {
+  background: darkred;
+}
+
+/* Matrix Kod Yağmuru Efekti */
+@keyframes matrixRain {
+  0% {
+    text-shadow: 0 0 5px #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 15px #00ff00;
+  }
+  100% {
+    text-shadow: 0 0 5px #00ff00;
+  }
+}
+
+.matrix-text {
+  font-size: 18px;
+  animation: matrixRain 1s infinite alternate;
+}
+
+
+
+.clock {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+  margin-bottom: 15px;
+  animation: matrixRain 1s infinite alternate;
+}
+
